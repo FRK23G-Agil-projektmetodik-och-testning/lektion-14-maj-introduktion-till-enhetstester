@@ -2,6 +2,9 @@ const { add, subtract } = require('./index.js');
 
 // En test suite med ett eller flera testfall
 describe('Mathematical operations', () => {
+  beforeEach(() => {
+    console.log('Denna funktion körs innan varje test');
+  });
   //Strängen nedan förklarar vad testet ska göra och det förväntade resultatet
   //Funktionen efter är det som kör testet
   it('should add two numbers together and return the sum', () => {
